@@ -1,37 +1,18 @@
-# Value Creation Assessment by Industry (Chris Moreira)
-
-[![CI by Chris](https://github.com/nogibjj/chris_moriera_valuecreation_pandas/actions/workflows/hello.yml/badge.svg)](https://github.com/nogibjj/chris_moriera_valuecreation_pandas/actions/workflows/hello.yml)
+# CD Interest Rate Simulation
 
 
-<< Data Description for all variables in my Dataset >>
-Company: Company name
-Valuation: Company valuation in billions (B) of dollars
-Date Joined: The date in which the company reached $1 billion in valuation
-Industry: Company industry
-City: City the company was founded in
-Country: Country the company was founded in
-Continent: Continent the company was founded in
-Year Founded: Year the company was founded
-Funding: Total amount raised across all funding rounds in billions (B) or millions (M) of dollars
-Select Investors: Top 4 investing firms or individual investors (some have less than 4)
+Here a model is developed to set interest rate on a new 3-month CD that a bank wants to roll out. In order to set the rate, this project computes the potential range of 3-month interest rate in the future.
 
-<<<<<<< HEAD
-<< Objective of Project >>
-- Input: csv file 
-- Output: working & tested function that produces the chart below & statistics pertinent to the variability of value creation in my dataset
+Today’s interest rate is 5%, and changes in interest rate follow a lognormal process with mean zero a standard deviation of 0.625% a day.
+The Jupyter notebook, simulate and graph 10 interest rate scenarios path with daily interval for the next 90 days.
+As a result, regardles of monetary policy decisions to cut or raise intrest rates, we project the potential paths of 10 scenarios given the historical variability of CDs provided by the standard deviation parameter of 0.625% a day
 
-<< How is value creation produced on a dataset for the Unicron company Data >> 
-Value Creation = Current Valuation of Unicorn Company - Funding Amount
-Both valuation and funding are computed in the USD currency 
+Project Input
+- Input: Historical standard deviation of CDs: key metric to understand interest rate variability 
+- Output: Algorithm that computes that variability into a lognormal process with mean zero and a line chart predicting 10 potential paths interest rates might take in the next 90 days. 
 
-<< Image for the Chart Produced by Main File >>
-![alt text](value_creation_boxplot.png)
-Note that this computed the variability of value creation for each industry presented in our raw data. 
+Please, refer to this page to undertand the lognormal process for interest rates: https://en.wikipedia.org/wiki/Log-normal_distribution
 
-<< Summary Statistics >>
-Mean of Value Creation (in billions): 2.921073446327684
-Median of Value Creation (in billions): 1.524
-Standard Deviation of Value Creation (in billions): 8.133136697911187
-=======
-![alt text](value_creation_boxplot.png)
->>>>>>> c3a0168712df93493226d46e672c86e01455a4ab
+Lognormal Simulation Additional Contest: https://medium.com/@polanitzer/the-lognormal-model-in-python-predict-the-bank-of-israel-interest-rate-one-year-ahead-using-the-6773eac79f5d
+
+#Interest Rate Simulation Chart
