@@ -16,3 +16,4 @@ Please, refer to this page to undertand the lognormal process for interest rates
 Lognormal Simulation Additional Contest: https://medium.com/@polanitzer/the-lognormal-model-in-python-predict-the-bank-of-israel-interest-rate-one-year-ahead-using-the-6773eac79f5d
 
 #Interest Rate Simulation Chart
+![alt text](cd_interest_rate_variability.png)
